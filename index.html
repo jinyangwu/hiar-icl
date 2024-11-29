@@ -553,7 +553,6 @@
   </style>
 
   <meta name="description" content="HiAR-ICL">
-  <meta name="keywords" content="LLM, Honesty, Alignment, Finetune, Dataset, Benchmark">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HiAR-ICL</title>
 
@@ -1440,19 +1439,6 @@
             <ol>
               <li><b>Models. </b>HiAR-ICL is a general approach applicable to various LLMs. In our experiments, we evaluate its effectiveness using state-of-the-art models: Llama3-8B-Instruct, Llama-3.1-8B-Instruct, Yi-1.5-6B-Chat, Qwen2-7B-Instruct, and Qwen2.5-7B/14B-Instruct. By focusing on LLMs with parameter counts generally under 10B, we aim to demonstrate the robustness and efficiency of our method. We expect that applying HiAR-ICL to small language models will achieve results comparable to or exceeding closed-source LLMs.</li>
               <li><b>Datasets. </b>Our evaluation benchmarks encompass: (1) arithmetic reasoning: GSM8K and SVAMP; (2) complex mathematical reasoning: MATH; (3) multi-hop commonsense reasoning: StrategyQA.<ul>
-                  <!-- <li><b>Purely Honest-Guided Evaluation.</b> This protocol aims to gauge the adherence of LLMs to
-                    honesty. LLMs are evaluated against predefined criteria specified in Table 4. An LLM is deemed
-                    honest if its responses consistently align with these standards. For this evaluation, we use the
-                    "Honesty Rate" metric, which quantifies the percentage of queries in which an LLM consistently
-                    exhibits honesty.</li>
-                  <li><b>H2 Assessment.</b> This protocol evaluates both honesty and helpfulness (H2). It requires LLMs
-                    to not only uphold honesty but also provide well-reasoned explanations, justifications, and viable
-                    solutions for user inquiries. The H2 assessment is based on three main criteria: (1) Rationality of
-                    Explanations for Honesty or Disclaimers, (2) Quality of Further Guidance, and (3) Potential
-                    Solutions. Criteria (1) and (2) are crucial as they directly reflect the model’s honesty and
-                    helpfulness, while (3) is secondary. The importance of these criteria is weighted accordingly in our
-                    evaluation. Additionally, the H2 protocol uses both pairwise and score-based evaluation formats to
-                    comprehensively assess responses.</li> -->
                 </ul>
                 <li><b>Baselines. </b>We evaluate HiAR-ICL against three strong baseline categories: (1) traditional example-based ICL methods, including zero-shot CoT, few-shot CoT, and SC+CoT; (2) tree-based methods, including ToT (Yao et al., 2023), RAP (Hao et al., 2023), ReST-MCTS (Zhang et al., 2024c), LiteSearch (Wang et al., 2024a), MCTSr (Zhang et al., 2024a), BEATS (Sun et al., 2024), LLaMA-Berry (Zhang et al., 2024b), and rStar (Qi et al., 2024). (3) powerful closed-source LLMs, including GPT-4, GPT-4o, Claude-3.5 and Gemini-1.5-pro.<ul></ul>
                 <li><b>Metrics.</b> We evaluate our approach using two key metrics. We report accuracy as our primary evaluation metric, where correctness is determined by comparing the model's final answer with the ground truth. To ensure consistent answer extraction, we require the LLM to explicitly state its solution following a predefined format (e.g., "The answer is"). Additionally, we measure the average reasoning time to analyze our method's computational complexity compared to existing search-based approaches.<ul></ul>
