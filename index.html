@@ -1277,12 +1277,33 @@
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2411.18478" target="_blank"
+                  <a href="https://arxiv.org/pdf/2411.18478" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
                     <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.18478" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="#BibTeX" 
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <svg class="svg-inline--fa fa-book fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path></svg>
+                    </span>
+                    <span>BibTex</span>
                   </a>
                 </span>
 
@@ -1305,17 +1326,6 @@
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
-                  </a>
-                </span> -->
-
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
                   </a>
                 </span> -->
               </div>
@@ -1497,6 +1507,256 @@
         <!--/ Environment Infrastructure. -->
       </div>
     </section>
+
+
+
+
+<!-- 
+
+    <section class="section">
+    <div class="container is-max-desktop">
+    <div class="cover" id="contentCover">
+      <div class="container-t">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="infoCard">
+              <div class="infoBody">
+                <div class="tabs is-centered example_lst">
+                  <ul>
+                    <li class="is-active"><a title="Main Results"><b>Main Results</b></a></li>
+                    <li class=""><a title="Comparison with closed-source LLMs"><b>Comparison with closed-source LLMs</b></a></li>
+                    <li class=""><a title="Comparison with other tree-based methods"><b>Comparison with other tree-based methods</b></a></li>
+                    <li class=""><a title="Computation Efficiency"><b>Computation Efficiency</b></a>
+                    </li>
+                  </ul>
+
+                </div>
+                <script type="text/javascript">
+                  document.querySelectorAll(".example_lst li").forEach(e => {
+                    e.addEventListener("click", Click_1)
+                  })
+
+                  function Click_1(eve) {
+                    const iTxt = eve.srcElement.innerText
+                    for (let v of document.querySelectorAll(".example_lst a")) {
+                      if (iTxt === v.innerText) {
+                        v.parentElement.className = "is-active";
+                      } else {
+                        v.parentElement.className = "";
+                      }
+                    }
+                    for (let block of document.getElementsByClassName('lib_examples')) {
+                      block.style.display = (block.title === iTxt) ? 'block' : 'none';
+                    }
+                  }
+
+                </script>
+
+
+                <div title="Main Results" class="lib_examples" id="BoardPanel2" style="display: none;">
+                  <md-block rendered="content">
+                    <p>Evaluation of HiAR-ICL's reasoning capabilities against ICL methods across four complex reasoning benchmarks
+                    </p>
+                  </md-block>
+
+                  <img src="./Figure1.png" width="100%"
+                    alt="environment infrastructure" class="responsive-image">
+                </div>
+
+
+                <div title="Comparison with closed-source LLMs" class="lib_examples" id="BoardPanel1" style="display: block;">
+                  <md-block rendered="content">
+                    <p>Improvements in honesty rate and H2
+                      scores for Llama3-8b and Mistral-7b after Curiosity-Driven method.
+                    </p>
+                  </md-block>
+                  <div class="table-container">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th rowspan="2">Model</th>
+                          <th colspan="2" class="nowrap">1~3 (Poor, ↓)</th>
+                          <th colspan="2" class="nowrap">4~6 (Medium, ↓)</th>
+                          <th colspan="2" class="nowrap">7~10 (Excellent, ↑)</th>
+                          <th colspan="3" class="nowrap">Overall(↑)</th>
+                        </tr>
+                        <tr>
+                          <th>raw</th>
+                          <th>opt.</th>
+                          <th>raw</th>
+                          <th>opt.</th>
+                          <th>raw</th>
+                          <th>opt.</th>
+                          <th>raw</th>
+                          <th>opt.</th>
+                          <th>gain</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="highlight">
+                          <td colspan="10"><strong>Proprietary Model</strong></td>
+                        </tr>
+                        <tr>
+                          <td><strong>GPT4</strong></td>
+                          <td><strong>2.5%</strong></td>
+                          <td><strong>0.1%</strong></td>
+                          <td><strong>10.1%</strong></td>
+                          <td><strong>2.5%</strong></td>
+                          <td><strong>87.6%</strong></td>
+                          <td><strong>97.3%</strong></td>
+                          <td><strong>8.094</strong></td>
+                          <td><strong>8.604</strong></td>
+                          <td class="gain">6.3%↑</td>
+                        </tr>
+                        <tr>
+                          <td><strong>ChatGPT</strong></td>
+                          <td>38.5%</td>
+                          <td>11.1%</td>
+                          <td>20.1%</td>
+                          <td>26.9%</td>
+                          <td>41.4%</td>
+                          <td>62.0%</td>
+                          <td>5.098</td>
+                          <td>6.770</td>
+                          <td class="gain">32.8%↑</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Claude3-Opus</strong></td>
+                          <td>14.4%</td>
+                          <td>0.9%</td>
+                          <td>17.0%</td>
+                          <td>9.2%</td>
+                          <td>68.6%</td>
+                          <td>89.9%</td>
+                          <td>7.061</td>
+                          <td>8.244</td>
+                          <td class="gain">16.8%↑</td>
+                        </tr>
+                        <tr class="highlight">
+                          <td colspan="10"><strong>Open-Source Model</strong></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Mistral-7b</strong></td>
+                          <td>55.3%</td>
+                          <td>21.7%</td>
+                          <td>20.4%</td>
+                          <td>27.5%</td>
+                          <td>24.4%</td>
+                          <td>50.8%</td>
+                          <td>3.885</td>
+                          <td>6.046</td>
+                          <td class="gain"><b>55.6%↑</b></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Mixtral-8x7b</strong></td>
+                          <td>31.4%</td>
+                          <td>2.8%</td>
+                          <td>18.1%</td>
+                          <td>15.5%</td>
+                          <td>50.5%</td>
+                          <td>81.7%</td>
+                          <td>5.693</td>
+                          <td>7.626</td>
+                          <td class="gain">34.0%↑</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Llama2-7b</strong></td>
+                          <td>42.9%</td>
+                          <td>23.2%</td>
+                          <td>19.1%</td>
+                          <td>17.2%</td>
+                          <td>38.0%</td>
+                          <td>59.6%</td>
+                          <td>4.877</td>
+                          <td>6.203</td>
+                          <td class="gain">27.2%↑</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Llama2-13b</strong></td>
+                          <td>42.7%</td>
+                          <td>24.9%</td>
+                          <td>19.0%</td>
+                          <td>22.1%</td>
+                          <td>38.4%</td>
+                          <td>53.0%</td>
+                          <td>4.890</td>
+                          <td>5.961</td>
+                          <td class="gain">21.9%↑</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Llama2-70b</strong></td>
+                          <td>39.4%</td>
+                          <td>21.0%</td>
+                          <td>19.7%</td>
+                          <td>14.8%</td>
+                          <td>40.9%</td>
+                          <td>64.2%</td>
+                          <td>5.068</td>
+                          <td>6.447</td>
+                          <td class="gain">27.2%↑</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Llama3-70b</strong></td>
+                          <td>25.3%</td>
+                          <td>4.2%</td>
+                          <td>20.8%</td>
+                          <td>14.5%</td>
+                          <td>53.9%</td>
+                          <td>81.3%</td>
+                          <td>6.128</td>
+                          <td>7.783</td>
+                          <td class="gain">27.0%↑</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div title="Comparison with other tree-based methods" class="lib_examples" id="BoardPanel2" style="display: none;">
+                  <md-block rendered="content">
+                    <p>Comprehensive evaluation results of the training-free method.
+                    </p>
+                  </md-block>
+
+                  <img src="./Figure3.png" width="100%"
+                    alt="environment infrastructure" class="responsive-image">
+                </div>
+
+                <div title="Computation Efficiency" class="lib_examples" id="BoardPanel4"
+                  style="display: none;">
+
+                  <md-block rendered="content">
+                    <p>Comparison with state-of-the-art tree-Based method, rStar.
+                    </p>
+                  </md-block>
+
+                  <img src="./Figure3.png" width="100%"
+                    alt="environment infrastructure" class="responsive-image">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Paper abstract -->
   <!-- <section class="section hero is-light">
