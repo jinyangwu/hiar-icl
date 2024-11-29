@@ -1,17 +1,1160 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+    .anticon {
+      display: inline-block;
+      color: inherit;
+      font-style: normal;
+      line-height: 0;
+      text-align: center;
+      text-transform: none;
+      vertical-align: -0.125em;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .anticon>* {
+      line-height: 1;
+    }
+
+    .anticon svg {
+      display: inline-block;
+    }
+
+    .anticon::before {
+      display: none;
+    }
+
+    .anticon .anticon-icon {
+      display: block;
+    }
+
+    .anticon[tabindex] {
+      cursor: pointer;
+    }
+
+    .anticon-spin::before,
+    .anticon-spin {
+      display: inline-block;
+      -webkit-animation: loadingCircle 1s infinite linear;
+      animation: loadingCircle 1s infinite linear;
+    }
+
+    @-webkit-keyframes loadingCircle {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes loadingCircle {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+      overflow: visible
+    }
+
+    .svg-inline--fa {
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      overflow: visible;
+      vertical-align: -.125em
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -.225em
+    }
+
+    .svg-inline--fa.fa-w-1 {
+      width: .0625em
+    }
+
+    .svg-inline--fa.fa-w-2 {
+      width: .125em
+    }
+
+    .svg-inline--fa.fa-w-3 {
+      width: .1875em
+    }
+
+    .svg-inline--fa.fa-w-4 {
+      width: .25em
+    }
+
+    .svg-inline--fa.fa-w-5 {
+      width: .3125em
+    }
+
+    .svg-inline--fa.fa-w-6 {
+      width: .375em
+    }
+
+    .svg-inline--fa.fa-w-7 {
+      width: .4375em
+    }
+
+    .svg-inline--fa.fa-w-8 {
+      width: .5em
+    }
+
+    .svg-inline--fa.fa-w-9 {
+      width: .5625em
+    }
+
+    .svg-inline--fa.fa-w-10 {
+      width: .625em
+    }
+
+    .svg-inline--fa.fa-w-11 {
+      width: .6875em
+    }
+
+    .svg-inline--fa.fa-w-12 {
+      width: .75em
+    }
+
+    .svg-inline--fa.fa-w-13 {
+      width: .8125em
+    }
+
+    .svg-inline--fa.fa-w-14 {
+      width: .875em
+    }
+
+    .svg-inline--fa.fa-w-15 {
+      width: .9375em
+    }
+
+    .svg-inline--fa.fa-w-16 {
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-w-17 {
+      width: 1.0625em
+    }
+
+    .svg-inline--fa.fa-w-18 {
+      width: 1.125em
+    }
+
+    .svg-inline--fa.fa-w-19 {
+      width: 1.1875em
+    }
+
+    .svg-inline--fa.fa-w-20 {
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-border {
+      height: 1.5em
+    }
+
+    .svg-inline--fa.fa-li {
+      width: 2em
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: 1.25em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -.125em;
+      width: 1em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter {
+      background-color: #ff253a;
+      border-radius: 1em;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #fff;
+      height: 1.5em;
+      line-height: 1;
+      max-width: 5em;
+      min-width: 1.5em;
+      overflow: hidden;
+      padding: .25em;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-bottom-right {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right
+    }
+
+    .fa-layers-bottom-left {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left
+    }
+
+    .fa-layers-top-right {
+      right: 0;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-top-left {
+      left: 0;
+      right: auto;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top left;
+      transform-origin: top left
+    }
+
+    .fa-lg {
+      font-size: 1.3333333333em;
+      line-height: .75em;
+      vertical-align: -.0667em
+    }
+
+    .fa-xs {
+      font-size: .75em
+    }
+
+    .fa-sm {
+      font-size: .875em
+    }
+
+    .fa-1x {
+      font-size: 1em
+    }
+
+    .fa-2x {
+      font-size: 2em
+    }
+
+    .fa-3x {
+      font-size: 3em
+    }
+
+    .fa-4x {
+      font-size: 4em
+    }
+
+    .fa-5x {
+      font-size: 5em
+    }
+
+    .fa-6x {
+      font-size: 6em
+    }
+
+    .fa-7x {
+      font-size: 7em
+    }
+
+    .fa-8x {
+      font-size: 8em
+    }
+
+    .fa-9x {
+      font-size: 9em
+    }
+
+    .fa-10x {
+      font-size: 10em
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: 2.5em;
+      padding-left: 0
+    }
+
+    .fa-ul>li {
+      position: relative
+    }
+
+    .fa-li {
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+      line-height: inherit
+    }
+
+    .fa-border {
+      border: solid .08em #eee;
+      border-radius: .1em;
+      padding: .2em .25em .15em
+    }
+
+    .fa-pull-left {
+      float: left
+    }
+
+    .fa-pull-right {
+      float: right
+    }
+
+    .fa.fa-pull-left,
+    .fab.fa-pull-left,
+    .fal.fa-pull-left,
+    .far.fa-pull-left,
+    .fas.fa-pull-left {
+      margin-right: .3em
+    }
+
+    .fa.fa-pull-right,
+    .fab.fa-pull-right,
+    .fal.fa-pull-right,
+    .far.fa-pull-right,
+    .fas.fa-pull-right {
+      margin-left: .3em
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8)
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1)
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1)
+    }
+
+    .fa-flip-both,
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1)
+    }
+
+    :root .fa-flip-both,
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-rotate-90 {
+      -webkit-filter: none;
+      filter: none
+    }
+
+    .fa-stack {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+      width: 2.5em
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2.5em
+    }
+
+    .fa-inverse {
+      color: #fff
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto
+    }
+
+    .svg-inline--fa .fa-primary {
+      fill: var(--fa-primary-color, currentColor);
+      opacity: 1;
+      opacity: var(--fa-primary-opacity, 1)
+    }
+
+    .svg-inline--fa .fa-secondary {
+      fill: var(--fa-secondary-color, currentColor);
+      opacity: .4;
+      opacity: var(--fa-secondary-opacity, .4)
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-primary {
+      opacity: .4;
+      opacity: var(--fa-secondary-opacity, .4)
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-secondary {
+      opacity: 1;
+      opacity: var(--fa-primary-opacity, 1)
+    }
+
+    .svg-inline--fa mask .fa-primary,
+    .svg-inline--fa mask .fa-secondary {
+      fill: #000
+    }
+
+    .fad.fa-inverse {
+      color: #fff
+    }
+  </style>
+  <style>
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .gain {
+      color: red;
+    }
+  </style>
+
+  <meta name="description" content="HonestLLM: Toward an Honest and Helpful Large Language Model">
+  <meta name="keywords" content="LLM, Honesty, Alignment, Finetune, Dataset, Benchmark">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HonestLLM: Toward an Honest and Helpful Large Language Model</title>
+  <script type="module" src="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/md-bl.下载"></script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/bulm.css">
+  <link rel="stylesheet" href="https://honestllm.github.io/static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="https://honestllm.github.io/static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/font.css">
+
+  <link rel="stylesheet" href="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/acad.css">
+  <link rel="stylesheet" href="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/inde.css">
+  <link rel="icon" href="https://honestllm.github.io/img/gui-logo.jpg">
+
+  <link rel="stylesheet" href="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/layo.css">
+  <link rel="stylesheet" href="https://honestllm.github.io/stylesheets/index.css">
+  <link rel="stylesheet" href="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/boot.css">
+
+  <script src="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/jquer.下载"></script>
+  <script defer="" src="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/fonta.下载"></script>
+  <script src="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/bulma.下载"></script>
+  <script src="https://honestllm.github.io/static/js/bulma-slider.min.js"></script>
+  <script src="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/index.下载"></script>
+
+  <link href="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/cont.css" media="screen"
+    rel="stylesheet" type="text/css">
+  <link href="./HonestLLM_ Toward an Honest and Helpful Large Language Model_files/cust.css" media="screen"
+    rel="stylesheet" type="text/css">
+  <style type="text/css">
+    .lf-progress {
+      -webkit-appearance: none;
+      -moz-apperance: none;
+      width: 100%;
+      /* margin: 0 10px; */
+      height: 4px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .lf-progress:focus {
+      outline: none;
+      border: none;
+    }
+
+    .lf-progress::-moz-range-track {
+      cursor: pointer;
+      background: none;
+      border: none;
+      outline: none;
+    }
+
+    .lf-progress::-webkit-slider-thumb {
+      -webkit-appearance: none !important;
+      height: 13px;
+      width: 13px;
+      border: 0;
+      border-radius: 50%;
+      background: #0fccce;
+      cursor: pointer;
+    }
+
+    .lf-progress::-moz-range-thumb {
+      -moz-appearance: none !important;
+      height: 13px;
+      width: 13px;
+      border: 0;
+      border-radius: 50%;
+      background: #0fccce;
+      cursor: pointer;
+    }
+
+    .lf-progress::-ms-track {
+      width: 100%;
+      height: 3px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    .lf-progress::-ms-fill-lower {
+      background: #ccc;
+      border-radius: 3px;
+    }
+
+    .lf-progress::-ms-fill-upper {
+      background: #ccc;
+      border-radius: 3px;
+    }
+
+    .lf-progress::-ms-thumb {
+      border: 0;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background: #0fccce;
+      cursor: pointer;
+    }
+
+    .lf-progress:focus::-ms-fill-lower {
+      background: #ccc;
+    }
+
+    .lf-progress:focus::-ms-fill-upper {
+      background: #ccc;
+    }
+
+    .lf-player-container :focus {
+      outline: 0;
+    }
+
+    .lf-popover {
+      position: relative;
+    }
+
+    .lf-popover-content {
+      display: inline-block;
+      position: absolute;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, -10px);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+    }
+
+    .lf-popover-content.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(0, 0px);
+    }
+
+    .lf-player-btn-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .lf-player-btn {
+      cursor: pointer;
+      fill: #999;
+      width: 14px;
+    }
+
+    .lf-player-btn.active {
+      fill: #555;
+    }
+
+    .lf-popover {
+      position: relative;
+    }
+
+    .lf-popover-content {
+      display: inline-block;
+      position: absolute;
+      background-color: #ffffff;
+      opacity: 1;
+
+      transform: translate(0, -10px);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+      padding: 10px;
+    }
+
+    .lf-popover-content.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(0, 0px);
+    }
+
+    .lf-arrow {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      bottom: -9px;
+      border-style: solid;
+      border-width: 10px 10px 0px 10px;
+    }
+
+    .lf-left-align,
+    .lf-left-align .lfarrow {
+      left: 0;
+      right: unset;
+    }
+
+    .lf-right-align,
+    .lf-right-align .lf-arrow {
+      right: 0;
+      left: unset;
+    }
+
+    .lf-text-input {
+      border: 1px #ccc solid;
+      border-radius: 5px;
+      padding: 3px;
+      width: 60px;
+      margin: 0;
+    }
+
+    .lf-color-picker {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 90px;
+    }
+
+    .lf-color-selectors {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .lf-color-component {
+      display: flex;
+      flex-direction: row;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lf-color-component strong {
+      width: 40px;
+    }
+
+    .lf-color-component input[type='range'] {
+      margin: 0 0 0 10px;
+    }
+
+    .lf-color-component input[type='number'] {
+      width: 50px;
+      margin: 0 0 0 10px;
+    }
+
+    .lf-color-preview {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 5px;
+    }
+
+    .lf-preview {
+      height: 60px;
+      width: 60px;
+    }
+
+    .lf-popover-snapshot {
+      width: 150px;
+    }
+
+    .lf-popover-snapshot h5 {
+      margin: 5px 0 10px 0;
+      font-size: 0.75rem;
+    }
+
+    .lf-popover-snapshot a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .lf-popover-snapshot a:before {
+      content: '⥼';
+      margin-right: 5px;
+    }
+
+    .lf-popover-snapshot .lf-note {
+      display: block;
+      margin-top: 10px;
+      color: #999;
+    }
+
+    .lf-player-controls>div {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    .lf-player-controls>div:first-child {
+      margin-left: 0px;
+    }
+
+    .lf-player-controls>div:last-child {
+      margin-right: 0px;
+    }
+  </style>
+  <style>
+    .lang_radio {
+      display: none;
+    }
+
+    .lang_radio_img {
+      vertical-align: unset !important;
+      width: 13px !important;
+      height: 13px !important;
+      margin-top: 0px !important;
+      cursor: pointer;
+      margin-right: 3px !important;
+      margin-top: 4px !important;
+      display: inline;
+      min-height: unset !important;
+      min-width: unset !important;
+    }
+  </style>
+  <style type="text/css">
+    .lf-progress {
+      -webkit-appearance: none;
+      -moz-apperance: none;
+      width: 100%;
+      /* margin: 0 10px; */
+      height: 4px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .lf-progress:focus {
+      outline: none;
+      border: none;
+    }
+
+    .lf-progress::-moz-range-track {
+      cursor: pointer;
+      background: none;
+      border: none;
+      outline: none;
+    }
+
+    .lf-progress::-webkit-slider-thumb {
+      -webkit-appearance: none !important;
+      height: 13px;
+      width: 13px;
+      border: 0;
+      border-radius: 50%;
+      background: #0fccce;
+      cursor: pointer;
+    }
+
+    .lf-progress::-moz-range-thumb {
+      -moz-appearance: none !important;
+      height: 13px;
+      width: 13px;
+      border: 0;
+      border-radius: 50%;
+      background: #0fccce;
+      cursor: pointer;
+    }
+
+    .lf-progress::-ms-track {
+      width: 100%;
+      height: 3px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    .lf-progress::-ms-fill-lower {
+      background: #ccc;
+      border-radius: 3px;
+    }
+
+    .lf-progress::-ms-fill-upper {
+      background: #ccc;
+      border-radius: 3px;
+    }
+
+    .lf-progress::-ms-thumb {
+      border: 0;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background: #0fccce;
+      cursor: pointer;
+    }
+
+    .lf-progress:focus::-ms-fill-lower {
+      background: #ccc;
+    }
+
+    .lf-progress:focus::-ms-fill-upper {
+      background: #ccc;
+    }
+
+    .lf-player-container :focus {
+      outline: 0;
+    }
+
+    .lf-popover {
+      position: relative;
+    }
+
+    .lf-popover-content {
+      display: inline-block;
+      position: absolute;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0, -10px);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+    }
+
+    .lf-popover-content.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(0, 0px);
+    }
+
+    .lf-player-btn-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .lf-player-btn {
+      cursor: pointer;
+      fill: #999;
+      width: 14px;
+    }
+
+    .lf-player-btn.active {
+      fill: #555;
+    }
+
+    .lf-popover {
+      position: relative;
+    }
+
+    .lf-popover-content {
+      display: inline-block;
+      position: absolute;
+      background-color: #ffffff;
+      opacity: 1;
+
+      transform: translate(0, -10px);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+      padding: 10px;
+    }
+
+    .lf-popover-content.hidden {
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(0, 0px);
+    }
+
+    .lf-arrow {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      bottom: -9px;
+      border-style: solid;
+      border-width: 10px 10px 0px 10px;
+    }
+
+    .lf-left-align,
+    .lf-left-align .lfarrow {
+      left: 0;
+      right: unset;
+    }
+
+    .lf-right-align,
+    .lf-right-align .lf-arrow {
+      right: 0;
+      left: unset;
+    }
+
+    .lf-text-input {
+      border: 1px #ccc solid;
+      border-radius: 5px;
+      padding: 3px;
+      width: 60px;
+      margin: 0;
+    }
+
+    .lf-color-picker {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 90px;
+    }
+
+    .lf-color-selectors {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .lf-color-component {
+      display: flex;
+      flex-direction: row;
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lf-color-component strong {
+      width: 40px;
+    }
+
+    .lf-color-component input[type='range'] {
+      margin: 0 0 0 10px;
+    }
+
+    .lf-color-component input[type='number'] {
+      width: 50px;
+      margin: 0 0 0 10px;
+    }
+
+    .lf-color-preview {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 5px;
+    }
+
+    .lf-preview {
+      height: 60px;
+      width: 60px;
+    }
+
+    .lf-popover-snapshot {
+      width: 150px;
+    }
+
+    .lf-popover-snapshot h5 {
+      margin: 5px 0 10px 0;
+      font-size: 0.75rem;
+    }
+
+    .lf-popover-snapshot a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .lf-popover-snapshot a:before {
+      content: '⥼';
+      margin-right: 5px;
+    }
+
+    .lf-popover-snapshot .lf-note {
+      display: block;
+      margin-top: 10px;
+      color: #999;
+    }
+
+    .lf-player-controls>div {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+    .lf-player-controls>div:first-child {
+      margin-left: 0px;
+    }
+
+    .lf-player-controls>div:last-child {
+      margin-right: 0px;
+    }
+  </style>
+  <style id="monica-reading-highlight-style">
+    .monica-reading-highlight {
+      animation: fadeInOut 1.5s ease-in-out;
+    }
+
+    @keyframes fadeInOut {
+
+      0%,
+      100% {
+        background-color: transparent;
+      }
+
+      30%,
+      70% {
+        background-color: rgba(2, 118, 255, 0.20);
+      }
+    }
+  </style>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -24,17 +1167,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>HiAR-ICL</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,7 +1185,58 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
-<body>
+
+
+<body monica-locale="zh_CN" data-new-gr-c-s-check-loaded="14.1209.0" data-gr-ext-installed=""
+  monica-id="ofpnmcalabcbjgholdjcjblkibolbppb" monica-version="7.0.1">
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://flossiee.github.io/">
+          <span class="icon">
+            <svg class="svg-inline--fa fa-home fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas"
+              data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+              <path fill="currentColor"
+                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
+              </path>
+            </svg><!-- <i class="fas fa-home"></i> Font Awesome fontawesome.com -->
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://gui-world.github.io/">
+              GUI-World
+            </a>
+            <a class="navbar-item" href="https://trustllmbenchmark.github.io/TrustLLM-Website/">
+              TrustLLM
+            </a>
+            <a class="navbar-item" href="https://mllm-judge.github.io/">
+              MLLM-as-a-Judge
+            </a>
+            <a class="navbar-item" href="https://unigen-framework.github.io/">
+              UniGen
+            </a>
+            <a class="navbar-item" href="https://llm-coauthor.github.io/">
+              LLM-as-a-Coauthor
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
 
 
   <section class="hero">
@@ -52,261 +1244,470 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">HiAR-ICL: High-level Automated Reasoning Paradigm in In-Context
+              Learning via MCTS</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <!-- <a href="https://orcid.org/my-orcid?orcid=0009-0006-0220-616X" target="_blank">Jinyang Wu</a> -->
+                Jinyang Wu
+                <sup style="color:#2bff32;">1</sup>
+                <sup style="color:#ff2b67;">*</sup>
+              </span>
+              <span class="author-block">
+                <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Mingkuan Feng</a> -->
+                Mingkuan Feng
+                <sup style="color:#2bff32;">1</sup>
+                <sup style="color:#ff2b67;">*</sup>
+              </span>
+              <span class="author-block">
+                Shuai Zhang
+                <sup style="color:#2bff32;">1</sup>
+                <sup style="color:#c9892e;">†</sup>
+              </span>
+              <span class="author-block">
+                Feihu Che
+                <sup style="color:#ec8bfd;">2</sup>
+              </span>
+              <span class="author-block">
+                Zengqi Wen
+                <sup style="color:#ec8bfd;">2</sup>
+              </span>
+              <span class="author-block">
+                Jianhua Tao
+                <sup style="color:#2bff32;">1</sup>
+                <sup style="color:#ec8bfd;">2</sup>
+                <sup style="color:#c9892e;">†</sup>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup style="color:#2bff32;">1</sup>
+                Department of Automation, Tsinghua University
+              </span>
+              <span class="author-block">
+                <sup style="color:#ec8bfd;">2</sup>
+                Beijing National Research Center for Information Science and Technology
+              </span>
+              <!-- <span class="eql-cntrb">
+                <small>
+                  <br><sup style="color:#ff2b67;">Indicates Equal Contribution</sup>
+                </small>
+              </span> -->
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><a href="mailto:wu-jy23@mails.tsinghua.edu.cn">wu-jy23@mails.tsinghua.edu.cn</a></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.18478" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+                <!-- Supplementary PDF link -->
+                <!-- <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                <!-- Github link -->
+                <!-- <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+  <!-- Teaser video-->
+  <!-- Your video here -->
+  <!-- <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/banner_video.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
+          pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+        </h2>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
+  </section> -->
+  <!-- End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Main Figure. -->
+      <h2 class="title is-3"></h2>
+      <div class="content has-text-justified">
+        <img src="./Figure1.png" width="100%"
+          alt="Schematic comparison between HiAR-ICL and traditional zero-shot and few-shot in-context learning methods" class="responsive-image">
+        <md-block rendered="content">
+          <p></p>
+          <p>We introduces <b>HiAR-ICL</b>, a novel paradigm to enhance the complex reasoning capabilities of large language models. Unlike traditional in-context learning, HiAR-ICL shifts the focus from example-based analogical learning to abstract thinking patterns. It employs Monte Carlo Tree Search to explore reasoning paths and creates "thought cards" to guide inferences. By dynamically matching test problems with appropriate thought cards through a proposed cognitive complexity framework, HiAR-ICL achieves state-of-the-art accuracy of 79.6% with 7B model on the challenging MATH benchmark, surpassing both GPT-4o and Claude 3.5. In summary, the primary contributions of this
+            paper are as follows:</p>
+          <ol>
+            <li><b>Novel ICL Framework.</b> We extend the traditional concept of "context" from specific examples to higher level cognitive reasoning patterns, advancing the frontier of ICL research. </li>
+            <li><b>Automated Reasoning Paradigm.</b> We propose a fully automated reasoning paradigm through MCTS, which eliminates human intervention in demonstration design, and aligns with LLM's intrinsic reasoning capabilities. </li>
+            <li><b>Human-Like Reasoning Behavior.</b> We introduce five atomic reasoning actions that emulate human cognitive processes, enabling more effective problem-solving.</li>
+            <li><b>Superior Performance.</b> HiAR-ICL significantly outperforms existing methods on complex reasoning benchmarks, achieving 79.6% accuracy on MATH with Qwen2.5-7B-Instruct, substantially outperforming GPT-4o (76.6%).</li>
+          </ol>
+        </md-block>
+      </div>
+      <!--/ Main Figure. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-wdith">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <md-block rendered="content">
+              <p>In-context Learning (ICL) enables large language models to tackle downstream tasks through sophisticated prompting and high-quality demonstrations. However, this traditional ICL paradigm shows limitations when facing complex mathematical reasoning tasks, primarily due to its heavy dependence on example quality and the necessity for human intervention in challenging scenarios. To address these limitations, this paper presents <b>HiAR-ICL</b>, a <b>Hi</b>gh-level <b>A</b>utomated <b>R</b>easoning paradigm in <b>ICL</b> that shifts focus from specific examples to abstract thinking patterns, extending the conventional concept of context in ICL. HiAR-ICL introduces five atomic reasoning actions as fundamental components for constructing chain-structured patterns. Using Monte Carlo Tree Search, we explore reasoning paths and construct thought cards to guide subsequent inference. We then develop a cognitive complexity framework that dynamically matches problems with appropriate thought cards. Experimental results demonstrate HiAR-ICL's effectiveness, achieving state-of-the-art accuracy (79.6%) on the MATH benchmark with Qwen2.5-7B-Instruct, surpassing GPT-4o (76.6%).
+              </p>
+            </md-block>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Environment Infrastructure. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-wdith">
+      <h2 class="title is-3">Overview of HiAR-ICL</h2>
+      <div class="content has-text-justified">
+        <img src="./Figure2.png" width="100%"
+          alt="environment infrastructure" class="responsive-image">
+        <md-block rendered="content">
+          <p>We propose the core steps of HiAR-ICL, which focus on consists of four main components:
+          </p>
+          <ol>
+            <li><b>Define Atom Reasoning Actions.</b> Define five human-like fundamental thought actions as building blocks for each chain-structured thought card</li>
+            <li><b>Construct Thought Cards via MCTS.</b> Leverage MCTS (Selection, Expansion, Simulation, Backpropagation) to construct thought cards comprehensively.</li>
+            <li><b>Select Reasoning Patterns.</b> Identify the optimal three reasoning patterns based on the problem's cognitive complexity level.</li>
+            <li><b>Solve and Verify.</b> Perform reasoning process under the selected patterns, and validate candidate solutions using PRM, ORM, or consistency-based verification.</li>
+          </ol>
+          <p></p>
+        </md-block>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+      <!--/ Environment Infrastructure. -->
+    </div>
+  </section>
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <!-- <section class="section">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="column is-full-wdith">
+          <h2 class="title is-3">Define Atom Reasoning Actions</h2>
+          <div class="content has-text-justified">
+            <md-block rendered="content">
+              <p>
+                Inspired by System 1 and System 2 thinking patterns, we introduce five atomic human-like reasoning actions to bridge the gap between model reasoning and human cognition as follows:
+              </p>
+            </md-block>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-wdith">
+      <h2 class="title is-3">Benchmark</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-wdith">
+          <div class="content has-text-justified">
+            <ol>
+              <li><b>Models. </b>HiAR-ICL is a general approach applicable to various LLMs. In our experiments, we evaluate its effectiveness using state-of-the-art models: Llama3-8B-Instruct, Llama-3.1-8B-Instruct, Yi-1.5-6B-Chat, Qwen2-7B-Instruct, and Qwen2.5-7B/14B-Instruct. By focusing on LLMs with parameter counts generally under 10B, we aim to demonstrate the robustness and efficiency of our method. We expect that applying HiAR-ICL to small language models will achieve results comparable to or exceeding closed-source LLMs.</li>
+              <li><b>Datasets. </b>Our evaluation benchmarks encompass: (1) arithmetic reasoning: GSM8K and SVAMP; (2) complex mathematical reasoning: MATH; (3) multi-hop commonsense reasoning: StrategyQA.<ul>
+                  <!-- <li><b>Purely Honest-Guided Evaluation.</b> This protocol aims to gauge the adherence of LLMs to
+                    honesty. LLMs are evaluated against predefined criteria specified in Table 4. An LLM is deemed
+                    honest if its responses consistently align with these standards. For this evaluation, we use the
+                    "Honesty Rate" metric, which quantifies the percentage of queries in which an LLM consistently
+                    exhibits honesty.</li>
+                  <li><b>H2 Assessment.</b> This protocol evaluates both honesty and helpfulness (H2). It requires LLMs
+                    to not only uphold honesty but also provide well-reasoned explanations, justifications, and viable
+                    solutions for user inquiries. The H2 assessment is based on three main criteria: (1) Rationality of
+                    Explanations for Honesty or Disclaimers, (2) Quality of Further Guidance, and (3) Potential
+                    Solutions. Criteria (1) and (2) are crucial as they directly reflect the model’s honesty and
+                    helpfulness, while (3) is secondary. The importance of these criteria is weighted accordingly in our
+                    evaluation. Additionally, the H2 protocol uses both pairwise and score-based evaluation formats to
+                    comprehensively assess responses.</li> -->
+                </ul>
+                <li><b>Baselines. </b>We evaluate HiAR-ICL against three strong baseline categories: (1) traditional example-based ICL methods, including zero-shot CoT, few-shot CoT, and SC+CoT; (2) tree-based methods, including ToT (Yao et al., 2023), RAP (Hao et al., 2023), ReST-MCTS (Zhang et al., 2024c), LiteSearch (Wang et al., 2024a), MCTSr (Zhang et al., 2024a), BEATS (Sun et al., 2024), LLaMA-Berry (Zhang et al., 2024b), and rStar (Qi et al., 2024). (3) powerful closed-source LLMs, including GPT-4, GPT-4o, Claude-3.5 and Gemini-1.5-pro.<ul></ul>
+                <li><b>Metrics.</b> We evaluate our approach using two key metrics. We report accuracy as our primary evaluation metric, where correctness is determined by comparing the model's final answer with the ground truth. To ensure consistent answer extraction, we require the LLM to explicitly state its solution following a predefined format (e.g., "The answer is"). Additionally, we measure the average reasoning time to analyze our method's computational complexity compared to existing search-based approaches.<ul></ul>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- End youtube video -->
+    </div>
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+    
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-wdith">
+        <!-- Environment Infrastructure. -->
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p><b>Main Results</b></p>
+          <md-block rendered="content">
+            <p>As shown in Table 1, we evaluate the effectiveness of HiARICL across four mainstream reasoning benchmarks. We provide comprehensive comparisons between HiAR-ICL and SOTA closed-source LLMs' performances (sourced from official websites and technical reports). We have two key findings:</p>
+            <p></p>
+            <ol>
+              <li>HiAR-ICL consistently performs better than traditional ICL methods across all tasks. For example, Llama3-8B's accuracy on the MATH benchmark improved from 17.8% (few-shot CoT) to 43.2% with HiAR-ICL, representing a substantial performance enhancement of 2.4 times.</li>
+              <li>Our method exhibits the most substantial performance improvements on relatively small language models. For example, Qwen2-7B-Instruct improved from 52.9% to 63.8%, Yi-1.5-6B-Chat from 40.5% to 54.0%, and Llama3-8BInstruct from 17.8% to 43.2%. These results underscore our approach's potential to efficiently guide smaller language models in generating and selecting optimal solutions</li>
+          </ol>
+          </md-block>
+          <p></p>
+          <p></p>
+          <img src="./Figure4.png" width="100%" alt="environment infrastructure" class="responsive-image">
+          <p></p>
+          <p></p>
+          <p><b>Comparison with state-of-the-art tree-based methods</b></p>
+          <!-- <md-block rendered="content">
+            <p>We compare our approach with other tree-based reasoning methods on GSM8K and MATH. As shown in Table 3, our method demonstrates superior performance and notable generalizability across various models and datasets.</p>
+            <p></p>
+          </md-block>
+          <img src="./Figure5.png" width="100%" alt="environment infrastructure" class="responsive-image"> -->
+
+          <md-block rendered="content">
+            <p>We also compare with rStar (Qi et al., 2024). As a recently proposed powerful method, rStar significantly expands the solution search space and achieves state-of-the-art performance in tree-based reasoning. Our analysis systematically assesses performance and computational efficiency. Notably, our approach achieves competitive performance with rStar while substantially reducing time complexity.</p>
+            <p></p>
+          </md-block>
+          <img src="./Figure3.png" width="100%" alt="environment infrastructure" class="responsive-image">
+          <p></p>
+          <p></p>
+          <p><b>More results can be found in our paper.</b></p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End video carousel -->
+        <!--/ Environment Infrastructure. -->
+      </div>
+    </section>
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+  <!-- Paper abstract -->
+  <!-- <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In-context Learning (ICL) enables large language models to tackle downstream tasks through sophisticated prompting and high-quality demonstrations. However, this traditional ICL paradigm shows limitations when facing complex mathematical reasoning tasks, primarily due to its heavy dependence on example quality and the necessity for human intervention in challenging scenarios. To address these limitations, this paper presents <b>HiAR-ICL</b>, a <b>Hi</b>gh-level <b>A</b>utomated <b>R</b>easoning paradigm in <b>ICL</b> that shifts focus from specific examples to abstract thinking patterns, extending the conventional concept of context in ICL. HiAR-ICL introduces five atomic reasoning actions as fundamental components for constructing chain-structured patterns. Using Monte Carlo Tree Search, we explore reasoning paths and construct thought cards to guide subsequent inference. We then develop a cognitive complexity framework that dynamically matches problems with appropriate thought cards. Experimental results demonstrate HiAR-ICL's effectiveness, achieving state-of-the-art accuracy (79.6%) on the MATH benchmark with Qwen2.5-7B-Instruct, surpassing GPT-4o (76.6%).
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </section> -->
+  <!-- End paper abstract -->
 
 
-<!--BibTex citation -->
+  <!-- Image carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              First image description.
+            </h2>
+          </div> -->
+          <!-- <div class="item">
+            <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Second image description.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Third image description.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Fourth image description.
+            </h2>
+          </div> -->
+        <!-- </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End image carousel -->
+
+
+
+
+  <!-- Youtube video -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End youtube video -->
+
+
+  <!-- Video carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Another Carousel</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <source src="static/videos/carousel1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <source src="static/videos/carousel2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <source src="static/videos/carousel3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End video carousel -->
+
+
+
+
+
+
+  <!-- Paper poster -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+
+        <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+        </iframe>
+
+      </div>
+    </div>
+  </section> -->
+  <!--End paper poster -->
+
+
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{wu2024hiaricl,
+        title={Beyond Examples: High-level Automated Reasoning Paradigm in In-Context Learning via MCTS}, 
+        author={Jinyang Wu and Mingkuan Feng and Shuai Zhang and Feihu Che and Zengqi Wen and Jianhua Tao},
+        year={2024},
+        eprint={2411.18478},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL},
+        url={https://arxiv.org/abs/2411.18478}, 
+  }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- Statcounter tracking code -->
 
-    <!-- End of Statcounter Code -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-  </body>
-  </html>
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
