@@ -1370,7 +1370,7 @@
           alt="Schematic comparison between HiAR-ICL and traditional zero-shot and few-shot in-context learning methods" class="responsive-image">
         <md-block rendered="content">
           <!-- <p></p> -->
-          <p>We introduces <b>HiAR-ICL</b>, a novel paradigm to enhance the complex reasoning capabilities of large language models. Unlike traditional in-context learning, HiAR-ICL shifts the focus from example-based analogical learning to abstract thinking patterns. It employs Monte Carlo Tree Search to explore reasoning paths and creates "thought cards" to guide inferences. By dynamically matching test problems with appropriate thought cards through a proposed cognitive complexity framework, HiAR-ICL achieves state-of-the-art accuracy of 79.6% with 7B model on the challenging MATH benchmark, surpassing both GPT-4o and Claude 3.5. In summary, the primary contributions of this
+          <p>We introduces <b>HiAR-ICL</b>, a novel paradigm to enhance the complex reasoning capabilities of large language models. Unlike traditional in-context learning, HiAR-ICL shifts the focus from example-based analogical learning to abstract thinking patterns. It employs Monte Carlo Tree Search to explore reasoning paths and creates "thought cards" to guide inferences. By dynamically matching test problems with appropriate thought cards through a proposed cognitive complexity framework, HiAR-ICL achieves remarkable accuracy of 79.6% with 7B model on the challenging MATH benchmark, surpassing both GPT-4o and Claude 3.5. In summary, the primary contributions of this
             paper are as follows:</p>
           <ol>
             <li><b>Novel ICL Framework.</b> We extend the traditional concept of "context" from specific examples to higher level cognitive reasoning patterns, advancing the frontier of ICL research. </li>
@@ -1391,7 +1391,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <md-block rendered="content">
-              <p>In-context Learning (ICL) enables large language models to tackle downstream tasks through sophisticated prompting and high-quality demonstrations. However, this traditional ICL paradigm shows limitations when facing complex mathematical reasoning tasks, primarily due to its heavy dependence on example quality and the necessity for human intervention in challenging scenarios. To address these limitations, this paper presents <b>HiAR-ICL</b>, a <b>Hi</b>gh-level <b>A</b>utomated <b>R</b>easoning paradigm in <b>ICL</b> that shifts focus from specific examples to abstract thinking patterns, extending the conventional concept of context in ICL. HiAR-ICL introduces five atomic reasoning actions as fundamental components for constructing chain-structured patterns. Using Monte Carlo Tree Search, we explore reasoning paths and construct thought cards to guide subsequent inference. We then develop a cognitive complexity framework that dynamically matches problems with appropriate thought cards. Experimental results demonstrate HiAR-ICL's effectiveness, achieving state-of-the-art accuracy (79.6%) on the MATH benchmark with Qwen2.5-7B-Instruct, surpassing GPT-4o (76.6%).
+              <p>In-context Learning (ICL) enables large language models to tackle downstream tasks through sophisticated prompting and high-quality demonstrations. However, this traditional ICL paradigm shows limitations when facing complex mathematical reasoning tasks, primarily due to its heavy dependence on example quality and the necessity for human intervention in challenging scenarios. To address these limitations, this paper presents <b>HiAR-ICL</b>, a <b>Hi</b>gh-level <b>A</b>utomated <b>R</b>easoning paradigm in <b>ICL</b> that shifts focus from specific examples to abstract thinking patterns, extending the conventional concept of context in ICL. HiAR-ICL introduces five atomic reasoning actions as fundamental components for constructing chain-structured patterns. Using Monte Carlo Tree Search, we explore reasoning paths and construct thought cards to guide subsequent inference. We then develop a cognitive complexity framework that dynamically matches problems with appropriate thought cards. Experimental results demonstrate HiAR-ICL's effectiveness, achieving remarkable accuracy (79.6%) on the MATH benchmark with Qwen2.5-7B-Instruct, surpassing GPT-4o (76.6%).
               </p>
             </md-block>
           </div>
@@ -1454,7 +1454,7 @@
         <div class="column is-full-wdith">
           <div class="content has-text-justified">
             <ol>
-              <li><b>Models. </b>HiAR-ICL is a general approach applicable to various LLMs. In our experiments, we evaluate its effectiveness using state-of-the-art models: Llama3-8B-Instruct, Llama-3.1-8B-Instruct, Yi-1.5-6B-Chat, Qwen2-7B-Instruct, and Qwen2.5-7B/14B-Instruct. By focusing on LLMs with parameter counts generally under 10B, we aim to demonstrate the robustness and efficiency of our method. We expect that applying HiAR-ICL to small language models will achieve results comparable to or exceeding closed-source LLMs.</li>
+              <li><b>Models. </b>HiAR-ICL is a general approach applicable to various LLMs. In our experiments, we evaluate its effectiveness using powerful models: Llama3-8B-Instruct, Llama-3.1-8B-Instruct, Yi-1.5-6B-Chat, Qwen2-7B-Instruct, and Qwen2.5-7B/14B-Instruct. By focusing on LLMs with parameter counts generally under 10B, we aim to demonstrate the robustness and efficiency of our method. We expect that applying HiAR-ICL to small language models will achieve results comparable to or exceeding closed-source LLMs.</li>
               <li><b>Datasets. </b>Our evaluation benchmarks encompass: (1) arithmetic reasoning: GSM8K and SVAMP; (2) complex mathematical reasoning: MATH; (3) multi-hop commonsense reasoning: StrategyQA.<ul>
                 </ul>
                 <li><b>Baselines. </b>We evaluate HiAR-ICL against three strong baseline categories: (1) traditional example-based ICL methods, including zero-shot CoT, few-shot CoT, and SC+CoT; (2) tree-based methods, including ToT (Yao et al., 2023), RAP (Hao et al., 2023), ReST-MCTS (Zhang et al., 2024c), LiteSearch (Wang et al., 2024a), MCTSr (Zhang et al., 2024a), BEATS (Sun et al., 2024), LLaMA-Berry (Zhang et al., 2024b), and rStar (Qi et al., 2024). (3) powerful closed-source LLMs, including GPT-4, GPT-4o, Claude-3.5 and Gemini-1.5-pro.<ul></ul>
@@ -1492,7 +1492,7 @@
           <img src="./Figure4.png" width="100%" alt="environment infrastructure" class="responsive-image">
           <p></p>
           <p></p>
-          <!-- <p><b>Comparison with state-of-the-art tree-based methods</b></p> -->
+          <!-- <p><b>Comparison with powerful tree-based methods</b></p> -->
           <!-- <md-block rendered="content">
             <p>We compare our approach with other tree-based reasoning methods on GSM8K and MATH. As shown in Table 3, our method demonstrates superior performance and notable generalizability across various models and datasets.</p>
             <p></p>
@@ -1500,7 +1500,7 @@
           <img src="./Figure5.png" width="100%" alt="environment infrastructure" class="responsive-image"> -->
 
           <!-- <md-block rendered="content">
-            <p>We also compare with rStar (Qi et al., 2024). As a recently proposed powerful method, rStar significantly expands the solution search space and achieves state-of-the-art performance in tree-based reasoning. Our analysis systematically assesses performance and computational efficiency. Notably, our approach achieves competitive performance with rStar while substantially reducing time complexity.</p>
+            <p>We also compare with rStar (Qi et al., 2024). As a recently proposed powerful method, rStar significantly expands the solution search space and achieves powerful performance in tree-based reasoning. Our analysis systematically assesses performance and computational efficiency. Notably, our approach achieves competitive performance with rStar while substantially reducing time complexity.</p>
             <p></p>
           </md-block>
           <img src="./Figure3.png" width="100%" alt="environment infrastructure" class="responsive-image"> -->
@@ -1732,7 +1732,7 @@
                   style="display: none;">
 
                   <md-block rendered="content">
-                    <p>Comparison with state-of-the-art tree-Based method, rStar.
+                    <p>Comparison with powerful tree-Based method, rStar.
                     </p>
                   </md-block>
 
@@ -1772,7 +1772,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              In-context Learning (ICL) enables large language models to tackle downstream tasks through sophisticated prompting and high-quality demonstrations. However, this traditional ICL paradigm shows limitations when facing complex mathematical reasoning tasks, primarily due to its heavy dependence on example quality and the necessity for human intervention in challenging scenarios. To address these limitations, this paper presents <b>HiAR-ICL</b>, a <b>Hi</b>gh-level <b>A</b>utomated <b>R</b>easoning paradigm in <b>ICL</b> that shifts focus from specific examples to abstract thinking patterns, extending the conventional concept of context in ICL. HiAR-ICL introduces five atomic reasoning actions as fundamental components for constructing chain-structured patterns. Using Monte Carlo Tree Search, we explore reasoning paths and construct thought cards to guide subsequent inference. We then develop a cognitive complexity framework that dynamically matches problems with appropriate thought cards. Experimental results demonstrate HiAR-ICL's effectiveness, achieving state-of-the-art accuracy (79.6%) on the MATH benchmark with Qwen2.5-7B-Instruct, surpassing GPT-4o (76.6%).
+              In-context Learning (ICL) enables large language models to tackle downstream tasks through sophisticated prompting and high-quality demonstrations. However, this traditional ICL paradigm shows limitations when facing complex mathematical reasoning tasks, primarily due to its heavy dependence on example quality and the necessity for human intervention in challenging scenarios. To address these limitations, this paper presents <b>HiAR-ICL</b>, a <b>Hi</b>gh-level <b>A</b>utomated <b>R</b>easoning paradigm in <b>ICL</b> that shifts focus from specific examples to abstract thinking patterns, extending the conventional concept of context in ICL. HiAR-ICL introduces five atomic reasoning actions as fundamental components for constructing chain-structured patterns. Using Monte Carlo Tree Search, we explore reasoning paths and construct thought cards to guide subsequent inference. We then develop a cognitive complexity framework that dynamically matches problems with appropriate thought cards. Experimental results demonstrate HiAR-ICL's effectiveness, achieving impressive accuracy (79.6%) on the MATH benchmark with Qwen2.5-7B-Instruct, surpassing GPT-4o (76.6%).
             </p>
           </div>
         </div>
